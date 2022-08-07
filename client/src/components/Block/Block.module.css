@@ -1,0 +1,25 @@
+.block_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.block_settings {
+  position: relative;
+  padding: 0;
+}
+
+.add_icon {
+  font-size: 25px;
+  padding: 0px;
+}
+
+.add_icon:hover {
+  background-color: #f4f4f5;
+  cursor: pointer;
+}
+
+.editable_container {
+  outline: 0px;
+  width: 100%;
+}

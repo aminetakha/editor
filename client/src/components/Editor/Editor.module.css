@@ -1,0 +1,7 @@
+.editor {
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  min-height: 100vh;
+}

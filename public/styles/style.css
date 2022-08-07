@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 50px 80px;
+  padding: 80px;
+  border: 1px solid #ccc;
+  min-height: 100vh;
+}
+
+[contenteditable="true"] {
+  outline: 0px;
+}
+
+.block-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.block-container:hover .add .plus {
+  display: block;
+}
+
+.block {
+  max-width: 100%;
+}
+
+.add {
+  position: relative;
+}
+
+.add .plus:hover {
+  background-color: rgb(235, 229, 229);
+  cursor: pointer;
+}
+
+.add .plus {
+  font-size: 23px;
+  padding: 0px 2px;
+}
+
+.hide-add {
+  display: none;
+}
+
+.options {
+  position: absolute;
+  z-index: 5;
+  background-color: white;
+  min-width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 100%;
+}
+
+.hide-options {
+  display: none;
+}
+
+.options ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.options ul li {
+  margin: 5px 0px;
+  padding: 0px 3px;
+}
+
+.options ul li:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.settings_container {
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  background-color: white;
+  min-width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.settings_container ul {
+  list-style-type: none;
+  padding: 4px;
+}
+
+.settings_container ul li {
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.settings_container ul li:hover {
+  background-color: #eefaff;
+  cursor: pointer;
+}

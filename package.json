@@ -1,0 +1,18 @@
+{
+  "name": "editor",
+  "version": "1.0.0",
+  "description": "Simple page builder",
+  "main": "index.js",
+  "author": "Amine Takha",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
