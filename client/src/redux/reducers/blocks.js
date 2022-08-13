@@ -1,4 +1,4 @@
-import { ADD_BLOCK, REMOVE_BLOCK } from "../types";
+import { ADD_BLOCK, CHANGE_BLOCK_TYPE, REMOVE_BLOCK } from "../types";
 
 const initialState = {
   blocks: [
@@ -41,6 +41,21 @@ export default (state = initialState, action) => {
       return {
         ...state,
         blocks: new_blocks,
+      };
+
+    case CHANGE_BLOCK_TYPE:
+      const updated_block_type = state.blocks.map((block) => {
+        if (block.id === payload.blockId) {
+          if (block.type === "image") {
+            return { ...block, type: payload.type, value: "" };
+          }
+          return { ...block, type: payload.type, value: payload.blockValue };
+        }
+        return block;
+      });
+      return {
+        ...state,
+        blocks: updated_block_type,
       };
     default:
       return state;
