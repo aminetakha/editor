@@ -7,12 +7,6 @@ const initialState = {
       type: "paragraph",
       value: "",
     },
-    {
-      id: Math.random(),
-      type: "heading",
-      level: "h2",
-      value: "",
-    },
   ],
 };
 
@@ -40,7 +34,10 @@ export default (state = initialState, action) => {
       };
 
     case REMOVE_BLOCK:
-      const new_blocks = state.blocks.filter((block) => block.id !== payload);
+      const new_blocks =
+        state.blocks.length > 1
+          ? state.blocks.filter((block) => block.id !== payload)
+          : state.blocks;
       return {
         ...state,
         blocks: new_blocks,
