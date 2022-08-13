@@ -37,7 +37,7 @@ const Block = ({ block }) => {
   };
 
   useEffect(() => {
-    // contentContainer.current.focus();
+    contentContainer.current.focus();
   }, []);
 
   return (
